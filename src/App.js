@@ -5,7 +5,6 @@ import './App.css'
 import wordsToNumbers from 'words-to-numbers'
 import { ALAN_API_KEY } from './utils'
 
-const alanKey=ALAN_API_KEY;
 
 const App = () => {
     const [newsArticles,setNewsArticles]=useState([]);
@@ -13,7 +12,7 @@ const App = () => {
 
     useEffect(()=>{
         alanBtn({
-            key: alanKey,
+            key: ALAN_API_KEY,
             onCommand:({command,articles,number})=>{
                 if(command==='newHeadlines'){
                     setNewsArticles(articles);
