@@ -3,8 +3,9 @@ import alanBtn from '@alan-ai/alan-sdk-web'
 import NewsCards from './components/NewsCards/NewsCards'
 import './App.css'
 import wordsToNumbers from 'words-to-numbers'
+import { ALAN_API_KEY } from './utils'
 
-const alanKey='3313885a252ffc1e6c6c8c8256ac2ea82e956eca572e1d8b807a3e2338fdd0dc/stage'
+const alanKey=ALAN_API_KEY;
 
 const App = () => {
     const [newsArticles,setNewsArticles]=useState([]);
